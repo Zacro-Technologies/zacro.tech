@@ -8,10 +8,180 @@
   <meta name="description"
     content="Compute credits in Zacro AI: contribute idle compute, bank credits, spend later for priority parallel workloads." />
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/network-logo.svg" />
+  <link rel="shortcut icon" href="assets/network-logo.svg" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-home" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-7 9 7" />
+        <path d="M5 10v10h5v-6h4v6h5V10" />
+      </g>
+    </symbol>
+    <symbol id="icon-split" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="4" r="2" />
+        <circle cx="6" cy="20" r="2" />
+        <circle cx="18" cy="20" r="2" />
+        <path d="M12 6v6" />
+        <path d="M12 12l-6 6" />
+        <path d="M12 12l6 6" />
+      </g>
+    </symbol>
+    <symbol id="icon-coin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M9 10h6" />
+        <path d="M9 14h6" />
+      </g>
+    </symbol>
+    <symbol id="icon-scale" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4v16" />
+        <path d="M5 7h14" />
+        <path d="M7 7l-3 5h6l-3-5z" />
+        <path d="M17 7l-3 5h6l-3-5z" />
+        <path d="M9 20h6" />
+      </g>
+    </symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3v18" />
+        <path d="M5 4h12l-2 4 2 4H5" />
+      </g>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M12 8v4l3 3" />
+      </g>
+    </symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3z" />
+      </g>
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M14.5 9.5l-2.5 5-5 2.5 2.5-5 5-2.5z" />
+      </g>
+    </symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5" y="11" width="14" height="9" rx="2" />
+        <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+      </g>
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="7" width="18" height="10" rx="2" />
+        <path d="M3 10h18" />
+        <circle cx="16" cy="12" r="1.2" />
+      </g>
+    </symbol>
+    <symbol id="icon-sliders" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <circle cx="9" cy="6" r="2" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <circle cx="15" cy="12" r="2" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+        <circle cx="7" cy="18" r="2" />
+      </g>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 14a7 7 0 1 1-10-10 6 6 0 0 0 10 10z" />
+      </g>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12l4 4 10-10" />
+      </g>
+    </symbol>
+    <symbol id="icon-merge" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 5l5 5 5-5" />
+        <path d="M12 10v10" />
+      </g>
+    </symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2L3 14h7l-1 8 12-14h-7l1-6z" />
+      </g>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="9" r="3" />
+        <circle cx="16" cy="10" r="3" />
+        <path d="M3 20c0-3.5 3-6 6-6" />
+        <path d="M21 20c0-3.5-3-6-6-6" />
+      </g>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4l8 4-8 4-8-4 8-4z" />
+        <path d="M4 12l8 4 8-4" />
+        <path d="M4 16l8 4 8-4" />
+      </g>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z" />
+      </g>
+    </symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="12" r="3" />
+        <path d="M11 12h10" />
+        <path d="M18 12v3" />
+        <path d="M15 12v3" />
+      </g>
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 5h16v10H7l-3 3V5z" />
+      </g>
+    </symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12" />
+      </g>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 6l10 6-10 6z" />
+      </g>
+    </symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="5" width="12" height="16" rx="2" />
+        <path d="M9 5V3h6v2" />
+      </g>
+    </symbol>
+    <symbol id="icon-device" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="5" width="16" height="10" rx="2" />
+        <path d="M8 19h8" />
+        <path d="M12 15v4" />
+      </g>
+    </symbol>
+    <symbol id="icon-flask" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 3h6" />
+        <path d="M10 3v5l-5 9a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-5-9V3" />
+        <path d="M8 13h8" />
+      </g>
+    </symbol>
+  </svg>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -19,7 +189,6 @@
         <img class="logo logo-network" src="assets/network-logo.svg" alt="" aria-hidden="true" />
         <span>
           <strong>Zacro AI</strong>
-          <span class="brand-sub">Save idle compute. Spend parallel AI.</span>
         </span>
       </a>
 
@@ -28,17 +197,46 @@
       </button>
 
       <nav class="nav" id="site-nav" data-nav-menu aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="credits.html" aria-current="page">Credits</a>
-        <a href="governance.html">Governance</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a class="btn btn-small btn-primary" href="roadmap.html">Coming Soon</a>
+        <a href="index.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-home"></use>
+          </svg>
+          Home
+        </a>
+        <a href="how-it-works.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-split"></use>
+          </svg>
+          How it works
+        </a>
+        <a href="credits.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-coin"></use>
+          </svg>
+          Credits
+        </a>
+        <a href="governance.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-scale"></use>
+          </svg>
+          Governance
+        </a>
+        <a href="roadmap.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-flag"></use>
+          </svg>
+          Roadmap
+        </a>
+        <a class="btn btn-small btn-primary" href="roadmap.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-clock"></use>
+          </svg>
+          Coming Soon
+        </a>
         <a class="btn btn-small btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
           rel="noopener">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor"
-              d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+            <use href="#icon-github"></use>
           </svg>
           Contribute
         </a>
@@ -50,20 +248,45 @@
     <section class="hero">
       <div class="container hero-inner">
         <div>
-          <p class="eyebrow">Compute savings</p>
-          <h1>Credits = your saved idle compute.</h1>
-          <p class="lead">
-            You don’t run AI all day. Zacro AI turns your device’s idle time into useful work for the network, and records
-            that contribution as credits.
-            Later, you spend those credits to get priority access for big parallel workloads.
-          </p>
+          <p class="eyebrow">Completely free access</p>
+          <h1>Credits come only from contribution.</h1>
+          <ul class="bullets icon-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-check"></use>
+              </svg>
+              Contribute verified compute while idle to earn credits
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-clock"></use>
+              </svg>
+              Credits give priority scheduling; best‑effort exists when idle
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-spark"></use>
+              </svg>
+              No subscriptions, no purchases, no crypto; credits aren’t transferable
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-layers"></use>
+              </svg>
+              Contribute across many model sizes (1.2B–120B+)
+            </li>
+          </ul>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-nav-hover" href="roadmap.html">Coming Soon</a>
+            <a class="btn btn-primary btn-nav-hover" href="roadmap.html">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-clock"></use>
+              </svg>
+              Coming Soon
+            </a>
             <a class="btn btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
               rel="noopener">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path fill="currentColor"
-                  d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+                <use href="#icon-github"></use>
               </svg>
               Contribute
             </a>
@@ -71,10 +294,10 @@
         </div>
         <aside class="hero-art">
           <div class="art-card">
-            <p class="pill">No cash‑out</p>
+            <p class="pill">No money, no crypto</p>
             <p class="muted" style="margin-top:10px;">
-              Credits are usage rights (non‑transferable). The goal is to replace subscriptions with contribution, not
-              to create “earn money” mechanics.
+              Credits are usage rights (non‑transferable). No purchases, no tokens, no cash‑out — just contribution for
+              access.
             </p>
           </div>
         </aside>
@@ -85,29 +308,91 @@
       <div class="container">
         <h2>The simple rules</h2>
         <ol class="steps">
-          <li>Contribute verified work while idle → credits are saved.</li>
-          <li>Spend credits → priority scheduling for parallel workloads.</li>
-          <li>No contribution? You can still use best‑effort access when idle capacity exists (limited + preemptible).
+          <li>
+            Contribute verified work while idle → credits are saved (the only way to earn them).
+            <svg class="icon step-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="#icon-check"></use>
+            </svg>
+          </li>
+          <li>
+            Spend credits → priority scheduling for parallel workloads.
+            <svg class="icon step-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="#icon-wallet"></use>
+            </svg>
+          </li>
+          <li>
+            No contribution? You can still use best‑effort access when idle capacity exists (limited + preemptible).
+            <svg class="icon step-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="#icon-moon"></use>
+            </svg>
           </li>
         </ol>
 
         <div class="callout">
           <strong>Fairness:</strong> contribution is weighted by recent reliability, so “contribute once, use forever”
-          doesn’t work.
+          doesn’t work. Credits are not sold or transferred.
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="estimator">
+    <section class="section section-soft" id="usage">
+      <div class="container">
+        <div class="section-head">
+          <h2>How credits are used for compute</h2>
+          <p class="muted">Credits are a direct budget for verified work, priced by network status.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-bolt"></use>
+              </svg>
+            </span>
+            <h3>Priority compute</h3>
+            <p>Spend credits to guarantee your workflow runs even when the network is busy.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-split"></use>
+              </svg>
+            </span>
+            <h3>Parallel workload budget</h3>
+            <p>Allocate credits across subtasks (drafts, checks, translations) and the scheduler fans out for you.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-wallet"></use>
+              </svg>
+            </span>
+            <h3>Verified‑token accounting</h3>
+            <p>Credits are tied to verified work. Earned credits only come from contribution.</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <strong>Pricing model (simple):</strong> credits spent ≈ verified tokens ÷ 1,000 × network multiplier.
+          Multipliers reflect demand (example: idle 0.6×, normal 1.0×, busy 1.4×).
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="estimator">
       <div class="container">
         <div class="section-head">
           <h2>Credits savings estimator (rough)</h2>
-          <p class="muted">A conservative placeholder so the promise stays honest.</p>
+          <p class="muted">Estimate what you can earn, then spend for priority compute when demand is high.</p>
         </div>
 
         <div class="calc" data-credits-calc>
           <div class="field">
-            <label for="device">Device profile</label>
+            <label for="device">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-device"></use>
+              </svg>
+              Device profile
+            </label>
             <select id="device">
               <option value="phone">Android phone (efficient / background‑limited)</option>
               <option value="laptop" selected>Laptop CPU (typical)</option>
@@ -116,7 +401,12 @@
           </div>
 
           <div class="field">
-            <label for="hours">Idle hours/day you’ll contribute (Wi‑Fi + charging)</label>
+            <label for="hours">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-clock"></use>
+              </svg>
+              Idle hours/day you’ll contribute (Wi‑Fi + charging)
+            </label>
             <input id="hours" type="range" min="0" max="12" step="0.5" value="4" />
             <p class="muted small" style="margin:8px 0 0 0;">Selected: <span id="hoursOut">4.0</span> hours/day</p>
           </div>
@@ -139,7 +429,7 @@
 
         <div class="callout">
           <strong>Community work pool:</strong> you can also reward governance/dev/mod work via an expiring voucher
-          budget (example target: 1% of delivered compute per epoch) without inflating the main credits.
+          pool (example target: 1% of delivered compute per epoch) without inflating the main credits.
         </div>
       </div>
     </section>
@@ -148,17 +438,19 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="org-row" aria-label="Zacro Technologies organization">
+        <a class="org-row org-link" href="https://zacro.tech" target="_blank" rel="noopener" aria-label="Zacro Technologies top page">
           <img class="logo-org" src="assets/org-logo.svg" alt="" aria-hidden="true" />
           <span class="org-name">Zacro Technologies</span>
-        </div>
+        </a>
         <p class="footer-title">Zacro AI</p>
-        <p class="muted" style="margin:6px 0 0 0;">Parallel AI from idle compute. Designed to be simple.</p>
+        <p class="muted" style="margin:6px 0 0 0;">Parallel AI from shared idle compute. Simple, private, community‑run.</p>
       </div>
       <div class="footer-links" aria-label="Footer">
-        <a href="how-it-works.html">How it works</a>
-        <a href="governance.html">Governance</a>
-        <a href="roadmap.html">Roadmap</a>
+        <a href="https://zacro.tech" target="_blank" rel="noopener">Top Page</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai/issues" target="_blank" rel="noopener">Contact / Support</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        <span class="footer-meta">© 2026 Zacro Technologies.</span>
       </div>
     </div>
   </footer>

@@ -236,6 +236,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   position: relative;
   padding: 8px 10px;
   border-radius: 999px;
@@ -272,26 +273,26 @@ a:hover {
   border: 1px solid color-mix(in srgb, var(--brand) 38%, var(--border));
   color: var(--text);
   font-weight: 700;
-  padding-left: 26px;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
   transform: none;
 }
 
 .nav a[aria-current="page"]::before {
-  content: "";
-  position: absolute;
-  left: 13px;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  transform: translateY(-50%);
-  background: var(--brand);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 14%, transparent);
+  content: none;
 }
 
 .nav a[aria-current="page"]:hover {
   background: color-mix(in srgb, var(--brand) 20%, var(--bg));
+}
+
+.nav a .icon {
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+
+.nav a[aria-current="page"] .icon {
+  color: var(--brand);
 }
 
 .btn {
@@ -320,6 +321,20 @@ a:hover {
   height: 16px;
   display: inline-block;
   flex: 0 0 auto;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .btn:hover {
@@ -394,7 +409,7 @@ a:hover {
 }
 
 .eyebrow {
-  font-size: 12px;
+  font-size: clamp(12px, 1.2vw, 14px);
   color: var(--muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -449,6 +464,23 @@ h3 {
 .bullets li::marker {
   color: var(--brand);
   font-weight: 700;
+}
+
+.bullets.icon-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bullets.icon-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bullets.icon-list li .icon {
+  margin-top: 0;
+  flex-shrink: 0;
+  color: var(--brand);
 }
 
 .hero-art .art-card {
@@ -561,6 +593,26 @@ section[id] {
   font-size: 14px;
 }
 
+.card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--brand) 10%, var(--bg-soft));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--brand);
+  box-shadow: var(--shadow-soft);
+  line-height: 0;
+}
+
+.card-icon .icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 .steps {
   margin: 22px 0 0 0;
   padding: 0;
@@ -574,7 +626,7 @@ section[id] {
   position: relative;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px 22px 22px 70px;
+  padding: 22px 64px 22px 70px;
   background: linear-gradient(160deg, var(--bg), var(--bg-wash));
   box-shadow: var(--shadow-soft);
 }
@@ -594,6 +646,16 @@ section[id] {
   font-weight: 900;
   color: #ffffff;
   background: var(--brand);
+}
+
+.steps li .step-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  color: var(--brand-ink);
+  opacity: 0.7;
 }
 
 .callout {
@@ -644,17 +706,21 @@ section[id] {
   border-radius: var(--radius);
   padding: 18px;
   background: linear-gradient(160deg, var(--bg), var(--bg-wash));
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .flow .flow-box strong {
   display: block;
 }
-.flow .flow-box span {
+.flow .flow-box .flow-text {
   display: block;
   margin-top: 4px;
   color: var(--muted);
   font-size: 13px;
 }
+
 
 .calc {
   margin-top: 20px;
@@ -672,10 +738,18 @@ section[id] {
 }
 
 .field label {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 900;
   font-size: 13px;
   margin-bottom: 8px;
+}
+
+.field label .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--brand-ink);
 }
 
 select,
@@ -732,6 +806,12 @@ select {
   font-weight: 900;
 }
 
+.milestone .when .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--brand-ink);
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
@@ -774,6 +854,14 @@ select {
   color: var(--muted);
 }
 
+.org-link {
+  text-decoration: none;
+}
+
+.org-link:hover .org-name {
+  color: var(--text);
+}
+
 .org-row .org-name {
   font-weight: 700;
   color: var(--brand-ink);
@@ -786,9 +874,9 @@ select {
 }
 
 .footer-links {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 10px 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .footer-links a {
@@ -798,6 +886,12 @@ select {
 .footer-links a:hover {
   color: var(--text);
   text-decoration: none;
+}
+
+.footer-meta {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 @media (min-width: 700px) {
@@ -843,7 +937,10 @@ select {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 955px) {
+  .header-inner {
+    padding: 12px 20px;
+  }
   .nav-toggle {
     display: inline-flex;
   }

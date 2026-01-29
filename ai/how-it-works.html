@@ -8,10 +8,180 @@
   <meta name="description"
     content="How Zacro AI executes parallel reasoning and tasks across idle community devices, then merges results and saves credits." />
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/network-logo.svg" />
+  <link rel="shortcut icon" href="assets/network-logo.svg" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-home" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-7 9 7" />
+        <path d="M5 10v10h5v-6h4v6h5V10" />
+      </g>
+    </symbol>
+    <symbol id="icon-split" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="4" r="2" />
+        <circle cx="6" cy="20" r="2" />
+        <circle cx="18" cy="20" r="2" />
+        <path d="M12 6v6" />
+        <path d="M12 12l-6 6" />
+        <path d="M12 12l6 6" />
+      </g>
+    </symbol>
+    <symbol id="icon-coin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M9 10h6" />
+        <path d="M9 14h6" />
+      </g>
+    </symbol>
+    <symbol id="icon-scale" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4v16" />
+        <path d="M5 7h14" />
+        <path d="M7 7l-3 5h6l-3-5z" />
+        <path d="M17 7l-3 5h6l-3-5z" />
+        <path d="M9 20h6" />
+      </g>
+    </symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3v18" />
+        <path d="M5 4h12l-2 4 2 4H5" />
+      </g>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M12 8v4l3 3" />
+      </g>
+    </symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3z" />
+      </g>
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="7" />
+        <path d="M14.5 9.5l-2.5 5-5 2.5 2.5-5 5-2.5z" />
+      </g>
+    </symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5" y="11" width="14" height="9" rx="2" />
+        <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+      </g>
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="7" width="18" height="10" rx="2" />
+        <path d="M3 10h18" />
+        <circle cx="16" cy="12" r="1.2" />
+      </g>
+    </symbol>
+    <symbol id="icon-sliders" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <circle cx="9" cy="6" r="2" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <circle cx="15" cy="12" r="2" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+        <circle cx="7" cy="18" r="2" />
+      </g>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 14a7 7 0 1 1-10-10 6 6 0 0 0 10 10z" />
+      </g>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12l4 4 10-10" />
+      </g>
+    </symbol>
+    <symbol id="icon-merge" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 5l5 5 5-5" />
+        <path d="M12 10v10" />
+      </g>
+    </symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2L3 14h7l-1 8 12-14h-7l1-6z" />
+      </g>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="9" r="3" />
+        <circle cx="16" cy="10" r="3" />
+        <path d="M3 20c0-3.5 3-6 6-6" />
+        <path d="M21 20c0-3.5-3-6-6-6" />
+      </g>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4l8 4-8 4-8-4 8-4z" />
+        <path d="M4 12l8 4 8-4" />
+        <path d="M4 16l8 4 8-4" />
+      </g>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z" />
+      </g>
+    </symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="12" r="3" />
+        <path d="M11 12h10" />
+        <path d="M18 12v3" />
+        <path d="M15 12v3" />
+      </g>
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 5h16v10H7l-3 3V5z" />
+      </g>
+    </symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12" />
+      </g>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 6l10 6-10 6z" />
+      </g>
+    </symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="5" width="12" height="16" rx="2" />
+        <path d="M9 5V3h6v2" />
+      </g>
+    </symbol>
+    <symbol id="icon-device" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="5" width="16" height="10" rx="2" />
+        <path d="M8 19h8" />
+        <path d="M12 15v4" />
+      </g>
+    </symbol>
+    <symbol id="icon-flask" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 3h6" />
+        <path d="M10 3v5l-5 9a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-5-9V3" />
+        <path d="M8 13h8" />
+      </g>
+    </symbol>
+  </svg>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -19,7 +189,6 @@
         <img class="logo logo-network" src="assets/network-logo.svg" alt="" aria-hidden="true" />
         <span>
           <strong>Zacro AI</strong>
-          <span class="brand-sub">Save idle compute. Spend parallel AI.</span>
         </span>
       </a>
 
@@ -28,17 +197,46 @@
       </button>
 
       <nav class="nav" id="site-nav" data-nav-menu aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html" aria-current="page">How it works</a>
-        <a href="credits.html">Credits</a>
-        <a href="governance.html">Governance</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a class="btn btn-small btn-primary" href="roadmap.html">Coming Soon</a>
+        <a href="index.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-home"></use>
+          </svg>
+          Home
+        </a>
+        <a href="how-it-works.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-split"></use>
+          </svg>
+          How it works
+        </a>
+        <a href="credits.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-coin"></use>
+          </svg>
+          Credits
+        </a>
+        <a href="governance.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-scale"></use>
+          </svg>
+          Governance
+        </a>
+        <a href="roadmap.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-flag"></use>
+          </svg>
+          Roadmap
+        </a>
+        <a class="btn btn-small btn-primary" href="roadmap.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <use href="#icon-clock"></use>
+          </svg>
+          Coming Soon
+        </a>
         <a class="btn btn-small btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
           rel="noopener">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor"
-              d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+            <use href="#icon-github"></use>
           </svg>
           Contribute
         </a>
@@ -50,20 +248,45 @@
     <section class="hero">
       <div class="container hero-inner">
         <div>
-          <p class="eyebrow">Simple mental model</p>
-          <h1>Fan out. Run in parallel. Merge.</h1>
-          <p class="lead">
-            Zacro AI is built for workflows where doing one step at a time is slow.
-            It decomposes a job into many subtasks, executes them concurrently across idle devices, then merges the
-            results.
-          </p>
+          <p class="eyebrow">How the network runs</p>
+          <h1>Fan out tasks, route to specialists, merge results.</h1>
+          <ul class="bullets icon-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-split"></use>
+              </svg>
+              Requests split into subtasks and routed to role‑specific models
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-bolt"></use>
+              </svg>
+              Models are tuned for concurrent execution and reasoning
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-layers"></use>
+              </svg>
+              Distributed MoE enables larger models across many devices
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-lock"></use>
+              </svg>
+              Edge‑to‑edge encrypted: nodes can’t read prompts or outputs
+            </li>
+          </ul>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-nav-hover" href="roadmap.html">Coming Soon</a>
+            <a class="btn btn-primary btn-nav-hover" href="roadmap.html">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <use href="#icon-clock"></use>
+              </svg>
+              Coming Soon
+            </a>
             <a class="btn btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
               rel="noopener">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path fill="currentColor"
-                  d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+                <use href="#icon-github"></use>
               </svg>
               Contribute
             </a>
@@ -86,24 +309,49 @@
         <h2>The workflow (in plain terms)</h2>
         <div class="flow" aria-label="Workflow">
           <div class="flow-box">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-clipboard"></use>
+              </svg>
+            </span>
             <strong>1) Plan</strong>
-            <span>Turn a request into a set of subtasks.</span>
+            <span class="flow-text">Turn a request into a set of subtasks.</span>
           </div>
           <div class="flow-box">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-split"></use>
+              </svg>
+            </span>
             <strong>2) Fan out</strong>
-            <span>Send subtasks to many nodes.</span>
+            <span class="flow-text">Send subtasks to many nodes.</span>
           </div>
           <div class="flow-box">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-play"></use>
+              </svg>
+            </span>
             <strong>3) Execute</strong>
-            <span>Idle devices run small models.</span>
+            <span class="flow-text">Idle devices run small models.</span>
           </div>
           <div class="flow-box">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-check"></use>
+              </svg>
+            </span>
             <strong>4) Verify</strong>
-            <span>Sampling / probes reduce cheating.</span>
+            <span class="flow-text">Sampling / probes reduce cheating.</span>
           </div>
           <div class="flow-box">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-merge"></use>
+              </svg>
+            </span>
             <strong>5) Merge</strong>
-            <span>Combine results into one output.</span>
+            <span class="flow-text">Combine results into one output.</span>
           </div>
         </div>
 
@@ -117,57 +365,112 @@
     <section class="section section-soft">
       <div class="container">
         <div class="section-head">
-          <h2>What gets faster (and what doesn’t)</h2>
-          <p class="muted">So users instantly understand what to expect.</p>
+          <h2>Why distributed MoE beats local</h2>
+          <p class="muted">More intelligence per device, and shorter wall‑clock time per job.</p>
         </div>
         <div class="cards">
           <article class="card">
-            <h3>Gets faster</h3>
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-layers"></use>
+              </svg>
+            </span>
+            <h3>Frontier‑scale intelligence</h3>
             <p>
-              Batch translation, summarizing many docs, multiple drafts, verification checks, testing prompts,
-              evaluation runs.
+              Local models are bounded by what your device can load. With distributed MoE, each node runs a specialist
+              and the system activates only the experts needed for each step. This yields capability closer to
+              frontier‑scale MoE models without requiring a single massive GPU.
             </p>
           </article>
           <article class="card">
-            <h3>Sometimes faster</h3>
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-bolt"></use>
+              </svg>
+            </span>
+            <h3>Speed from concurrency</h3>
             <p>
-              Hard reasoning when you benefit from parallel “branches” and cross-checking before producing one final
-              answer.
+              Instead of one model doing a long chain, Zacro fans out subtasks to many devices at once. You get
+              summaries, checks, and drafts in parallel, then a merge step assembles the final answer.
             </p>
           </article>
           <article class="card">
-            <h3>Usually not faster</h3>
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-merge"></use>
+              </svg>
+            </span>
+            <h3>Merge + verify</h3>
             <p>
-              A single short chat response on one prompt (streaming output is often still sequential).
+              Multiple independent outputs are compared, reconciled, and scored. This reduces single‑model blind spots
+              and catches errors before results are returned.
             </p>
           </article>
+        </div>
+        <div class="callout">
+          <strong>Bottom line:</strong> local models are fast to start but limited in intelligence. Distributed MoE
+          expands capability while preserving speed through parallel execution.
         </div>
       </div>
     </section>
 
-    <section class="section" id="run-node">
+    <section class="section">
       <div class="container">
-        <h2>Coming Soon (set it once, forget it)</h2>
-        <ol class="steps">
-          <li>Install Zacro AI Node.</li>
-          <li>Choose your rules: run only on Wi‑Fi, only while charging, set CPU/GPU caps, quiet hours.</li>
-          <li>Leave it running. While your computer would be idle, it contributes and saves credits for you.</li>
-        </ol>
+        <div class="section-head">
+          <h2>Distributed MoE &amp; routing</h2>
+          <p class="muted">Experts across devices, routed automatically for the best outcome.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-layers"></use>
+              </svg>
+            </span>
+            <h3>Expert nodes</h3>
+            <p>
+              Each contributor runs a specialist (math, code, writing, planning). A single job can activate multiple
+              experts, creating a virtual MoE that exceeds the memory limits of any single device.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-bolt"></use>
+              </svg>
+            </span>
+            <h3>Concurrency-tuned</h3>
+            <p>Models are fine-tuned for parallel task execution and multi-branch reasoning, not just single-thread chat.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" focusable="false">
+                <use href="#icon-compass"></use>
+              </svg>
+            </span>
+            <h3>Role specialists</h3>
+            <p>Math reasoning, programming, analytical writing, task planning, summarization, translation, tool calling.</p>
+          </article>
+        </div>
 
         <div class="callout">
-          <strong>Safety defaults:</strong> start with “Wi‑Fi + charging only” so contributing never surprises you.
+          <strong>Automatic routing:</strong> the scheduler selects the best path and can chain specialists. This
+          creates a distributed MoE that rivals frontier-scale models without requiring one massive GPU.
         </div>
       </div>
     </section>
 
     <section class="section section-soft">
       <div class="container">
-        <h2>Privacy (simple, honest stance)</h2>
+        <h2>Privacy (edge-to-edge encrypted)</h2>
         <p class="muted">
-          By default, a community node executing your request may see your prompt. Treat Zacro AI as non‑confidential
-          unless/until stronger privacy
-          modes exist. Do not submit secrets.
+          Requests are encrypted edge-to-edge so worker nodes only see sealed payloads and execution constraints, not
+          the prompt or the output. Only the requester can decrypt results.
         </p>
+        <div class="callout">
+          <strong>Node-blind by design:</strong> payloads stay sealed in transit and at rest, so nodes cannot inspect what
+          comes in or goes out.
+        </div>
       </div>
     </section>
   </main>
@@ -175,18 +478,19 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="org-row" aria-label="Zacro Technologies organization">
+        <a class="org-row org-link" href="https://zacro.tech" target="_blank" rel="noopener" aria-label="Zacro Technologies top page">
           <img class="logo-org" src="assets/org-logo.svg" alt="" aria-hidden="true" />
           <span class="org-name">Zacro Technologies</span>
-        </div>
+        </a>
         <p class="footer-title">Zacro AI</p>
-        <p class="muted" style="margin:6px 0 0 0;">Parallel AI from idle compute. Designed to be simple.</p>
+        <p class="muted" style="margin:6px 0 0 0;">Parallel AI from shared idle compute. Simple, private, community‑run.</p>
       </div>
       <div class="footer-links" aria-label="Footer">
-        <a href="index.html">Home</a>
-        <a href="credits.html">Credits</a>
-        <a href="governance.html">Governance</a>
-        <a href="roadmap.html">Roadmap</a>
+        <a href="https://zacro.tech" target="_blank" rel="noopener">Top Page</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai/issues" target="_blank" rel="noopener">Contact / Support</a>
+        <a href="https://github.com/Zacro-Technologies/zacro-ai/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        <span class="footer-meta">© 2026 Zacro Technologies.</span>
       </div>
     </div>
   </footer>
