@@ -54,13 +54,7 @@ body {
   margin: 0;
   font-family: var(--sans);
   color: var(--text);
-  background:
-    radial-gradient(
-      900px 420px at 90% -20%,
-      color-mix(in srgb, var(--leaf) 14%, transparent),
-      transparent 60%
-    ),
-    var(--bg);
+  background: var(--bg);
   line-height: 1.65;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
@@ -664,11 +658,7 @@ section[id] {
   border-radius: var(--radius);
   border: 1px solid color-mix(in srgb, var(--brand) 22%, var(--border));
   border-left: 3px solid var(--brand);
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--brand) 10%, transparent),
-    transparent
-  );
+  background: var(--bg-soft);
 }
 
 .callout strong {
@@ -679,7 +669,7 @@ section[id] {
   margin-top: 30px;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  background: linear-gradient(120deg, var(--bg-soft), var(--bg));
+  background: var(--bg-soft);
   padding: 24px;
   display: flex;
   flex-direction: column;

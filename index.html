@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zacro Technologies</title>
+    <meta
+      name="description"
+      content="Zacro Technologies builds parallel AI infrastructure and coordinated compute networks."
+    />
+    <link rel="icon" type="image/svg+xml" href="ai/assets/org-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f2ed;
+        --bg-soft: #fff6f0;
+        --ink: #1c1914;
+        --muted: #5f564a;
+        --accent: #9f1026;
+        --accent-2: #2a8a63;
+        --card: #ffffff;
+        --shadow: 0 18px 60px rgba(28, 25, 20, 0.12);
+        --radius: 18px;
+        --border: rgba(28, 25, 20, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        padding: 10px 14px;
+        background: var(--card);
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        transform: translateY(-200%);
+        transition: transform 0.2s ease;
+        z-index: 10;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .page {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 32px 20px 64px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 0 32px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .brand img {
+        width: 42px;
+        height: 42px;
+      }
+
+      nav {
+        display: flex;
+        gap: 18px;
+        font-size: 0.95rem;
+      }
+
+      nav a {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        transition: border 0.2s ease, background 0.2s ease;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        border-color: var(--border);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        align-items: center;
+        padding: 36px;
+        border-radius: var(--radius);
+        background: var(--card);
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        animation: fade-up 0.7s ease both;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.4rem, 3vw, 3.1rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+      }
+
+      .hero p {
+        margin: 0 0 20px;
+        color: var(--muted);
+        max-width: 46ch;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 10px 18px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        font-weight: 500;
+        background: transparent;
+      }
+
+      .btn.primary {
+        background: var(--accent);
+        color: #fff;
+        border-color: transparent;
+      }
+
+      .hero-card {
+        padding: 20px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: linear-gradient(135deg, rgba(159, 16, 38, 0.08), rgba(42, 138, 99, 0.1));
+      }
+
+      .hero-card h2 {
+        font-size: 1.05rem;
+        margin: 0 0 10px;
+      }
+
+      .hero-card ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .card {
+        padding: 18px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid var(--border);
+        animation: fade-up 0.7s ease both;
+      }
+
+      .card:nth-child(2) {
+        animation-delay: 0.08s;
+      }
+
+      .card:nth-child(3) {
+        animation-delay: 0.16s;
+      }
+
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 40px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      footer a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 820px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header>
+        <a class="brand" href="index.html">
+          <img src="ai/assets/org-logo.svg" alt="Zacro Technologies logo" />
+          <span>Zacro Technologies</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="ai/index.html">Zacro AI</a>
+          <a href="ai/roadmap.html">Roadmap</a>
+          <a href="ai/governance.html">Governance</a>
+          <a href="ai/credits.html">Credits</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero">
+          <div>
+            <h1>Parallel AI infrastructure, built with coordinated compute.</h1>
+            <p>
+              Zacro Technologies is an organization focused on turning idle devices into dependable, shared
+              compute. We build the systems, governance, and tooling needed to run AI workloads in parallel.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="ai/index.html">Explore Zacro AI</a>
+              <a class="btn" href="ai/how-it-works.html">How it works</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Organization focus</h2>
+            <ul>
+              <li>Networked compute orchestration</li>
+              <li>Open governance and community credits</li>
+              <li>Safety, provenance, and accountability</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="grid" aria-label="What we do">
+          <div class="card">
+            <h3>Research and prototyping</h3>
+            <p>Rapid experiments in distributed AI execution and workload routing.</p>
+          </div>
+          <div class="card">
+            <h3>Product delivery</h3>
+            <p>Operational platforms that let teams run tasks in parallel safely.</p>
+          </div>
+          <div class="card">
+            <h3>Community network</h3>
+            <p>Policies, credits, and incentives that keep the network healthy.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>Based in the open. Built for coordinated compute.</span>
+        <span><a href="ai/credits.html">Credits</a> and <a href="ai/governance.html">Governance</a></span>
+        <span>(c) 2026 Zacro Technologies</span>
+      </footer>
+    </div>
+  </body>
+</html>
