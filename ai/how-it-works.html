@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How it works — Zacro AI</title>
+  <meta name="description"
+    content="How Zacro AI executes parallel reasoning and tasks across idle community devices, then merges results and saves credits." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Zacro AI home">
+        <img class="logo logo-network" src="assets/network-logo.svg" alt="" aria-hidden="true" />
+        <span>
+          <strong>Zacro AI</strong>
+          <span class="brand-sub">Save idle compute. Spend parallel AI.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav class="nav" id="site-nav" data-nav-menu aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html" aria-current="page">How it works</a>
+        <a href="credits.html">Credits</a>
+        <a href="governance.html">Governance</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="btn btn-small btn-primary" href="roadmap.html">Coming Soon</a>
+        <a class="btn btn-small btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
+          rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+              d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+          </svg>
+          Contribute
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Simple mental model</p>
+          <h1>Fan out. Run in parallel. Merge.</h1>
+          <p class="lead">
+            Zacro AI is built for workflows where doing one step at a time is slow.
+            It decomposes a job into many subtasks, executes them concurrently across idle devices, then merges the
+            results.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-nav-hover" href="roadmap.html">Coming Soon</a>
+            <a class="btn btn-ghost" href="https://github.com/Zacro-Technologies/zacro-ai" target="_blank"
+              rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor"
+                  d="M12 2C6.477 2 2 6.484 2 12.019c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.035 1.532 1.035.893 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.339-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.279.098-2.664 0 0 .84-.27 2.75 1.026a9.59 9.59 0 0 1 2.5-.336c.85.004 1.705.114 2.5.336 1.909-1.296 2.748-1.026 2.748-1.026.546 1.385.203 2.41.1 2.664.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.694-4.566 4.943.359.309.678.92.678 1.855 0 1.337-.012 2.415-.012 2.743 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.019C22 6.484 17.523 2 12 2Z" />
+              </svg>
+              Contribute
+            </a>
+          </div>
+        </div>
+        <aside class="hero-art">
+          <div class="art-card">
+            <p class="pill">Parallel by default</p>
+            <p class="muted" style="margin-top:10px;">
+              Best for batch, verification, and multi-branch reasoning.
+              Not aimed at “one device, one chat” speedups.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>The workflow (in plain terms)</h2>
+        <div class="flow" aria-label="Workflow">
+          <div class="flow-box">
+            <strong>1) Plan</strong>
+            <span>Turn a request into a set of subtasks.</span>
+          </div>
+          <div class="flow-box">
+            <strong>2) Fan out</strong>
+            <span>Send subtasks to many nodes.</span>
+          </div>
+          <div class="flow-box">
+            <strong>3) Execute</strong>
+            <span>Idle devices run small models.</span>
+          </div>
+          <div class="flow-box">
+            <strong>4) Verify</strong>
+            <span>Sampling / probes reduce cheating.</span>
+          </div>
+          <div class="flow-box">
+            <strong>5) Merge</strong>
+            <span>Combine results into one output.</span>
+          </div>
+        </div>
+
+        <div class="callout">
+          <strong>Key point:</strong> the “speed” comes from doing many subtasks simultaneously, not from making a
+          single model generate tokens faster.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <h2>What gets faster (and what doesn’t)</h2>
+          <p class="muted">So users instantly understand what to expect.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Gets faster</h3>
+            <p>
+              Batch translation, summarizing many docs, multiple drafts, verification checks, testing prompts,
+              evaluation runs.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Sometimes faster</h3>
+            <p>
+              Hard reasoning when you benefit from parallel “branches” and cross-checking before producing one final
+              answer.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Usually not faster</h3>
+            <p>
+              A single short chat response on one prompt (streaming output is often still sequential).
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="run-node">
+      <div class="container">
+        <h2>Coming Soon (set it once, forget it)</h2>
+        <ol class="steps">
+          <li>Install Zacro AI Node.</li>
+          <li>Choose your rules: run only on Wi‑Fi, only while charging, set CPU/GPU caps, quiet hours.</li>
+          <li>Leave it running. While your computer would be idle, it contributes and saves credits for you.</li>
+        </ol>
+
+        <div class="callout">
+          <strong>Safety defaults:</strong> start with “Wi‑Fi + charging only” so contributing never surprises you.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <h2>Privacy (simple, honest stance)</h2>
+        <p class="muted">
+          By default, a community node executing your request may see your prompt. Treat Zacro AI as non‑confidential
+          unless/until stronger privacy
+          modes exist. Do not submit secrets.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="org-row" aria-label="Zacro Technologies organization">
+          <img class="logo-org" src="assets/org-logo.svg" alt="" aria-hidden="true" />
+          <span class="org-name">Zacro Technologies</span>
+        </div>
+        <p class="footer-title">Zacro AI</p>
+        <p class="muted" style="margin:6px 0 0 0;">Parallel AI from idle compute. Designed to be simple.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="credits.html">Credits</a>
+        <a href="governance.html">Governance</a>
+        <a href="roadmap.html">Roadmap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+
+</html>
