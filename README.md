@@ -1,21 +1,46 @@
-# zacro.tech
-Static website for Zacro Technologies (zacro.tech) and the Zacro AI pages.
+# Zacro Technologies
+Official static site for zacro.tech and the Zacro AI microsite.
+
+> Fast, minimal, and build-free. Edit the HTML, refresh the page.
+
+## Contents
+| Area | Path | Purpose |
+| --- | --- | --- |
+| Main site | `index.html` | Zacro Technologies landing page |
+| AI landing | `ai/index.html` | Zacro AI overview |
+| Governance | `ai/governance.html` | Governance details |
+| Roadmap | `ai/roadmap.html` | Product direction and milestones |
+| How it works | `ai/how-it-works.html` | Process and approach |
+| Credits | `ai/credits.html` | Acknowledgements |
+| Shared assets | `ai/assets/` | Styles, scripts, and logos |
 
 ## Structure
-- `index.html`: Organization top page.
-- `ai/`: Zacro AI site pages and assets.
-  - `ai/index.html`: Zacro AI landing page.
-  - `ai/how-it-works.html`: How it works overview.
-  - `ai/roadmap.html`: Product roadmap.
-  - `ai/governance.html`: Governance details.
-  - `ai/credits.html`: Credits and acknowledgements.
-  - `ai/assets/`: Shared styles, JS, and logos.
+```
+.
+├── index.html
+└── ai/
+    ├── index.html
+    ├── how-it-works.html
+    ├── roadmap.html
+    ├── governance.html
+    ├── credits.html
+    └── assets/
+```
 
 ## Local preview
-Open `index.html` in your browser.
-
-If you want a simple local server:
+1) Open `index.html` directly in your browser, or
+2) run a local server:
 ```sh
 python3 -m http.server 8000
 ```
 Then visit `http://localhost:8000`.
+
+## Editing guide
+- Update the main brand site in `index.html`.
+- Update the AI microsite pages in `ai/*.html`.
+- Keep paths relative to support local previews and static hosting.
+
+## Quality checklist
+- Verify links between main site and AI pages.
+- Scan pages on desktop and mobile widths.
+- Confirm shared assets load from `ai/assets/`.
